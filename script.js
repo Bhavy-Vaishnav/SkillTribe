@@ -29,3 +29,12 @@ function showModal() {
 
 // Smooth Scroll for CTA
 document.querySelector(".cta-btn").add
+document.getElementById('skillForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent page reload
+
+  // Show success message
+  document.getElementById('formMessage').style.display = 'block';
+
+  // Clear form
+  this.reset();
+});

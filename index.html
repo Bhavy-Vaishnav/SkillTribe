@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TribeStart - Unlock Your Potential</title>
+  <title>SKillTribe - Unlock Your Potential</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
   <!-- Hero Section -->
   <header class="hero">
@@ -16,6 +18,19 @@
       <a href="#signup" class="cta-btn">Join the Challenge</a>
     </div>
   </header>
+
+  <!-- Interest Form Section (MOVED BELOW HERO) -->
+  <section id="interest-form">
+    <h2>Join a Skill Tribe</h2>
+    <p>Tell us what you want to learn — we’ll connect you with the right people!</p>
+    <form id="skillForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="skill" placeholder="Skill you want to learn" required />
+      <input type="text" id="city" placeholder="Your City (optional)" />
+      <button type="submit">Join Now</button>
+      <p id="formMessage" style="display:none;">Thanks for joining! We’ll reach out soon. 🙌</p>
+    </form>
+  </section>
 
   <!-- Challenge Details Section -->
   <section class="details">
@@ -82,4 +97,5 @@
     </div>
   </footer>
 </body>
+
 </html>
